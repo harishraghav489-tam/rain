@@ -306,7 +306,6 @@ export const IndiaMap: React.FC = () => {
 
       {/* Operational Map Status Badge */}
       <div className="absolute right-4 bottom-4 z-20 hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-xl bg-white/90 backdrop-blur-md border border-white/80 shadow-sm text-xs font-semibold text-navy">
-        <span className="w-2 h-2 rounded-full bg-emerald-500 animate-ping" />
         <span>17,415 Grid Domain Active</span>
         <span className="text-slate-400 font-normal">| 0.25° Res</span>
       </div>

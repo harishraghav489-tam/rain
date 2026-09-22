@@ -142,10 +142,6 @@ export const Sidebar: React.FC = () => {
         <div className="text-[10px] text-slate-400 mt-0.5">
           MoES / NCMRWF / IMD Standards
         </div>
-        <div className="text-[10px] text-slate-400 mt-1 flex items-center gap-1.5">
-          <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
-          <span>Operational Node: LIVE</span>
-        </div>
       </div>
     </aside>
   );
