@@ -1,21 +1,18 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { CloudRain, Sliders, Layers, Sparkles, AlertCircle, ArrowDownUp } from "lucide-react";
 import { IndiaMap } from "@/components/maps/india-map";
 import { GridInspector } from "@/components/grid-inspector/grid-inspector";
-import { RainfallChart } from "@/components/charts/rainfall-chart";
 import { ClayCard } from "@/components/ui/clay-card";
 import { ClayBadge } from "@/components/ui/clay-badge";
 import { useMapStore } from "@/store/map-store";
 import { useForecastStore } from "@/store/forecast-store";
 import { raincorApi } from "@/services/api/client";
-import { ForecastResponse, ForecastLeadTime, ForecastDisplayMode } from "@/types/forecast";
-import { IMD_THRESHOLDS } from "@/lib/constants";
+import { ForecastResponse, ForecastDisplayMode } from "@/types/forecast";
 
 export default function ForecastPage() {
   const { isInspectorOpen } = useMapStore();
-  const { leadTime, setLeadTime, displayMode, setDisplayMode } = useForecastStore();
+  const { leadTime, displayMode, setDisplayMode } = useForecastStore();
 
   const [forecast, setForecast] = useState<ForecastResponse | null>(null);
   const [loading, setLoading] = useState(true);
@@ -28,7 +25,6 @@ export default function ForecastPage() {
     });
   }, [leadTime, displayMode]);
 
-  const leadTimes: ForecastLeadTime[] = ["T+6h", "T+12h", "T+24h", "T+48h", "T+72h"];
   const modes: Array<{ id: ForecastDisplayMode; label: string; desc: string }> = [
     { id: "bias_corrected", label: "RAINCOR Bias Corrected", desc: "Regime-aware AI corrected precipitation" },
     { id: "nwp", label: "Raw NWP (NCUM / GFS)", desc: "Unadjusted numerical model rainfall forecast" },

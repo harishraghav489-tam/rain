@@ -1,6 +1,6 @@
 export const APP_NAME = "RAINCOR";
 export const APP_TAGLINE = "Monsoon Intelligence for India";
-export const APP_SUBTITLE = "India Rainfall Monitoring & Forecasting System (NWP + AI + Regime Intelligence + Adaptive Bias Correction)";
+export const APP_SUBTITLE = "India Rainfall Monitoring & Forecasting System";
 
 export const REGIMES = [
   "Active Monsoon",

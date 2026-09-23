@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import "mapbox-gl/dist/mapbox-gl.css";
 import "./globals.css";
 import { Providers } from "@/components/providers";
 import { AppShell } from "@/components/layout/app-shell";
@@ -6,7 +7,7 @@ import { AppShell } from "@/components/layout/app-shell";
 export const metadata: Metadata = {
   title: "RAINCOR | India Rainfall Monitoring & Weather Intelligence",
   description:
-    "India-focused operational rainfall forecasting and regime intelligence platform (NWP + AI + Regime Post-Processing + Adaptive Bias Correction)",
+    "India-focused operational rainfall forecasting and regime intelligence platform",
   keywords: [
     "Rainfall Forecasting",
     "India Weather Intelligence",

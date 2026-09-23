@@ -72,9 +72,6 @@ export const Sidebar: React.FC = () => {
         <div>
           <div className="flex items-center gap-1.5">
             <span className="text-xl font-extrabold tracking-tight text-navy">RAINCOR</span>
-            <span className="text-[10px] px-1.5 py-0.2 rounded-md bg-blue-100 text-brand-blue font-bold">
-              v0.1
-            </span>
           </div>
           <p className="text-[11px] font-medium text-slate-400 -mt-0.5">
             Monsoon Intelligence for India
@@ -134,15 +131,6 @@ export const Sidebar: React.FC = () => {
         ))}
       </div>
 
-      {/* Footer Info */}
-      <div className="p-4 border-t border-slate-100 bg-slate-50/50">
-        <div className="text-[11px] font-semibold text-navy">
-          Rainforest Operational Engine
-        </div>
-        <div className="text-[10px] text-slate-400 mt-0.5">
-          MoES / NCMRWF / IMD Standards
-        </div>
-      </div>
     </aside>
   );
 };
